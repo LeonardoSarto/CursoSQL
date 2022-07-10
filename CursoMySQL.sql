@@ -15,7 +15,7 @@ CREATE TABLE estado(
 );
 
 INSERT INTO estado(nome, sigla, data_cadastro) VALUES('PARANÁ', 'PR', '2022-07-10');
-INSERT INTO estado(nome, sigla, data_cadastro) VALUES('PARANÁ', 'PR', '2022-07-10');
+INSERT INTO estado(nome, sigla, data_cadastro) VALUES('SÃO PAULO', 'SP', '2022-07-10');
 
 SELECT id, nome, sigla, ativo, data_cadastro FROM estado;
 
@@ -32,5 +32,8 @@ CREATE TABLE cidade(
 );
 
 INSERT INTO cidade (nome, estado_id) VALUES('CURITIBA', 3);
+
+DELETE FROM cidade where estado_id = 3;
+UPDATE estado SET ativo = 'S' WHERE nome = 'PARANÁ';
 
 SELECT * FROM cidade;
