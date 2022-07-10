@@ -53,3 +53,14 @@ SELECT * FROM cidade;
 7.	Escreva o comando para seleccionar o nome de todos os registros da tabela cidade.
 	SELECT cidade_nome FROM cidade;
 */
+
+/*
+01 - Liste o id e o nome de todas as cidades e as respectivas siglas do estado.
+	SELECT cidade.id, cidade.nome, estado.sigla FROM cidade, estado WHERE estado_id = cidade.estado_id;
+07 - Liste o id e o nome de todas as cidades e as respectivas siglas do estado de São Paulo.
+	SELECT cidade.id, cidade.nome, estado.sigla FROM cidade, estado WHERE estado_id = cidade.estado_id AND estado.nome = 'SÃO PAULO';
+01 - O que é JOIN? Quando é necessário?
+	JOIN é o comando que realiza as junções de duas ou mais tabelas, é opcional pra realizar junções de tabelas, porém é altamente indicado pela facilidade de sintaxe.
+06 - Para realizar o JOIN de 1523 tabelas, quantas comparações de junções são necessárias? Explique.
+	1522 condições de junção. Pois para realizar a junção de 2 tabelas é necessário apenas 1 condição de junção, aplicando agora para mais tabelas é só diminuir o número de tabelas em 1 que encontramos o valor de condições de junção
+*/
