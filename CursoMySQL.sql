@@ -15,7 +15,7 @@ CREATE TABLE estado(
 );
 
 INSERT INTO estado(nome, sigla, data_cadastro) VALUES('PARANÁ', 'PR', '2022-07-10');
-INSERT INTO estado(nome, sigla, data_cadastro) VALUES('SÃO PAULO', 'SP', '2022-07-10');
+INSERT INTO estado(nome, sigla, data_cadastro) VALUES('PARANÁ', 'PR', '2022-07-10');
 
 SELECT id, nome, sigla, ativo, data_cadastro FROM estado;
 
@@ -31,6 +31,6 @@ CREATE TABLE cidade(
     CONSTRAINT cidade_unica UNIQUE(nome, estado_id)
 );
 
-INSERT INTO cidade (nome, estado_id) VALUES('CURITIBA', 1);
+INSERT INTO cidade (nome, estado_id) VALUES('CURITIBA', 3);
 
 SELECT * FROM cidade;
